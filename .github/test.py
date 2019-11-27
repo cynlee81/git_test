@@ -110,7 +110,7 @@ if __name__ == "__main__":
     client = ldclient.get()
 
     print("******** TEST ********")
-
+    enabled = ldclient.get().variation("test1", {}, "Unknown")
     test_1("vid11")
     #test_1("vid12")
     #test_1("vid13")
@@ -124,4 +124,3 @@ if __name__ == "__main__":
 
     # cache size
     # logging level
-
